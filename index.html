@@ -6,24 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="резюме Татьяна">
     <meta name="description" content="Информация о Татьяне Степуль">
+    <link rel="stylesheet" href="styles.css">
     <title>Татьяна Степуль</title>
 </head>
-<body>
+<body >
+    <div class="container">
+        <div class="infot">
+
+        <div class="info" > 
+        <div class="infotext">
     <h1><em>Степуль Татьяна Владимировна</em></h1>
-    <hr>
-    <img src="IMG_3617.JPG" alt="фото Татьяны Степуль" width="400">
+    <hr color="black">
+    <img src="IMG_3617.JPG" alt="фото Татьяны Степуль" class="avatar">
     <p>Возраст:22 года</p>
     <p>Работаю в сфере <strong>авиации</strong> и <strong>тренером по гимнастике</strong></p>
     <p>В свободное время люблю заниматься спортом, путешествовать и проводить время с друзьями.</p>
     <p>С ноября 2022 года начала изучать программирование</p>
+</div>
+    <br>
+    <div class="card bg-yellow">
+        <div class="contact">
     <h3>Мои контакты:</h3>
     <a target="_blank" href="https://mail.ru/">e-mail</a>
     |
     <a target="_blank" href="https://www.instagram.com/">instagram</a>
     |
     <a target="_blank" href="https://vk.com/">vk</a>
-    <h3>Мои хобби:</h3>
-    <ol>
+</div>
+</div>
+</div>
+    </div>
+    <br>
+    <div class="card bg-red">
+        <h3>Мои хобби:</h3>
+    <ol class="list">
         <li>Гимнастика
             <ol type="a">
                 <li>художественная</li>
@@ -33,8 +49,9 @@
         <li>Чтение книг</li>
         <li>Прогулки с друзьями</li>
     </ol>
+</div>
     <h3>Опыт работы</h3>
-    <table width="400" border="3">
+    <table class="table" width="400" border="3">
         <thead>
                         <tr>
                 <th>Название</th>
@@ -63,24 +80,28 @@
 
     </tfoot>
     </table>
-    <h3>Связаться со мной</h3>
-    <form>
-        <div>
+
+    <div class="form-row">
+    <form class="form">
+        <h3>Связаться со мной</h3>
+        <div class="form-group">
         <label for="text">Ваше имя:</label>
         <input type="text" id="text" placeholder="Введите имя">
     </div> 
-    <div>
+    <div class="form-group">
         <label for="email">Ваш email:</label>
         <input type="email" id="email" placeholder="Введите e-mail">
     </div>
-    <div>
+</div>
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label></div>
-    <div>
+    <div class="form-group">
         <textarea id="message" placeholder="Введите сообщение..." cols="30" rows="5"></textarea>
     </div>
-   <div>
-    <button type="submit">Отправить</button>
+   <div  >
+    <button type="submit" class="btn">Отправить</button>
    </div>
        </form>
+    </div>
 </body>
 </html>
